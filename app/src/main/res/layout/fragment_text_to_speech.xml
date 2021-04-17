@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".engine.TexttoSpeech.TexttoSpeechFragment" >
+
+    <EditText
+        android:id="@+id/enter_text"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="92dp"
+        android:ems="10"
+        android:hint="Enter Text"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp" />
+
+    <SeekBar
+        android:id="@+id/seekbar_pitch"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="77dp"
+        android:progress="50" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/enter_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="189dp"
+        android:text="Pitch"
+        android:textColor="#090909"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/enter_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="318dp"
+        android:text="Speed"
+        android:textColor="#0B0B0B"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekbar_speed"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar_pitch"
+        android:layout_alignStart="@+id/enter_text"
+        android:layout_alignEnd="@+id/seekbar_pitch"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="3dp"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/say_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar_speed"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="148dp"
+        android:text="Say It !"
+        android:textSize="14sp"
+        app:backgroundTint="#E91E63" />
+</RelativeLayout>

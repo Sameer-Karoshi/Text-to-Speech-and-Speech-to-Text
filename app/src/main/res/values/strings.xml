@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Text to Speech and Speech to Text</string>
+    <string name="speech_to_text">Speech to Text</string>
+    <string name="text_to_speech">Text to Speech</string>
+</resources>

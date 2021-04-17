@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_speech_to_text"
+        android:icon="@drawable/ic_baseline_record_voice_over_24"
+        android:title="@string/speech_to_text" />
+
+    <item
+        android:id="@+id/navigation_text_to_speech"
+        android:icon="@drawable/texttospecch"
+        android:title="@string/text_to_speech" />
+
+</menu>
